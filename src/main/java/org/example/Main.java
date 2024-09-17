@@ -22,10 +22,13 @@ public class Main {
             jugadores.add(new Jugador(nombre));
         }
 
-        // Imprimir jugadores para verificar
+        // Imprimir jugadores y sus cartas vacías para verificar
         System.out.println("Jugadores:");
         for (Jugador jugador : jugadores) {
             System.out.println(jugador.getNombre());
+            System.out.println("Cartas de Armas: " + jugador.getCartasArma());
+            System.out.println("Cartas de Personajes: " + jugador.getCartasPersonaje());
+            System.out.println("Cartas de Habitaciones: " + jugador.getCartasHabitacion());
         }
     }
 
